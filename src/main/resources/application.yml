@@ -32,7 +32,7 @@ spring:
 # CORS allowed origins (comma-separated)
 app:
   cors:
-    allowed-origins: http://localhost:3000
+    allowed-origins: ${ALLOW_HOST: http://localhost:3000}
   jwt:
     secret: bXlTdXBlclNlY3VyZUp3dFNlY3JldEtleUZvckNhbmR5U2hvcEFwcGxpY2F0aW9uMTIzNDU2Nzg5MA==
     expiration: 86400000 # 24 hours in milliseconds
