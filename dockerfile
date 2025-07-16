@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jdk-alpine AS build
 WORKDIR /app
 
-ENV SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/candydb
+ENV SPRING_DATASOURCE_URL=jdbc:postgresql://ep-cool-sea-a1p9qnk3-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 ENV SPRING_DATASOURCE_USERNAME=postgres
 ENV SPRING_DATASOURCE_PASSWORD=postgres
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
